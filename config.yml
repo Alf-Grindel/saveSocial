@@ -1,0 +1,9 @@
+server:
+  version: 1.0.0
+  name: SaveSocial
+
+mysql:
+  addr: 127.0.0.1:8140
+  database: saveSocial
+  username: save0814
+  password: save0814

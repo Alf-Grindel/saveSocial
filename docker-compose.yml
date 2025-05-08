@@ -1,0 +1,17 @@
+services:
+  db:
+    container_name: "saveSocialDB"
+    image: mysql:8
+    volumes:
+      - mysql-data:/var/lib/mysql
+    ports:
+      - "8140:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "SMY0814."
+      MYSQL_DATABASE: "saveSocial"
+      MYSQL_USERNAME: "save0814"
+      MYSQL_PASSWORD: "save0814"
+    restart: unless-stopped
+
+volumes:
+  mysql-data:
